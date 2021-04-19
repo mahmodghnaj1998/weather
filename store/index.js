@@ -77,7 +77,9 @@ const actions = {
     },
     async getWeather({ commit, state }) {
         let key = "6bd0f00f3b174f12905133315211404"
-        await this.$axios.$get(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${state.city}&days=10&aqi=no&alerts=no`).then((re) => {
+        await this.$axios.$get(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${state.city}&days=10&aqi=no&alerts=no`,{
+            headers: {'Access-Control-Allow-Origin': '*'}
+        }).then((re) => {
             commit("loction", re.location)
             commit("forecast", re.forecast)
             commit("current", re.current)
@@ -87,7 +89,9 @@ const actions = {
     },
     async getWeatherSearch({ commit }, paylod) {
             let key = "6bd0f00f3b174f12905133315211404"
-        await this.$axios.$get(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${paylod}&days=10&aqi=no&alerts=no`).then((re) => {
+        await this.$axios.$get(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${paylod}&days=10&aqi=no&alerts=no`,{
+            headers: {'Access-Control-Allow-Origin': '*'}
+        }).then((re) => {
             commit("loction", re.location)
             commit("forecast", re.forecast)
             commit("current", re.current)
