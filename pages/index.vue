@@ -27,12 +27,6 @@
 
         <v-icon>mdi-view-day-outline</v-icon>
       </v-btn>
-
-      <v-btn @click="tab = 3">
-        <span>Map</span>
-
-        <v-icon>mdi-map</v-icon>
-      </v-btn>
     </v-bottom-navigation>
     <v-tabs
       dark
