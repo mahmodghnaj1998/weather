@@ -57,7 +57,7 @@ export default {
           success: colors.green.accent3
         },
         light:{
-          primary: colors.indigo.accent4
+          primary: colors.purple.accent3
         }
       }
     }

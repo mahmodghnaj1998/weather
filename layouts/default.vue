@@ -106,8 +106,8 @@ export default {
   },
 
   async mounted() {
-       await this.$store.dispatch("getInfo")
-     await  this.$store.dispatch("getWeather")
+    await this.$store.dispatch("getInfo")
+    await  this.$store.dispatch("getWeather")
   },
 };
 </script>
