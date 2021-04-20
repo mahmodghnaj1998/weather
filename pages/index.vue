@@ -547,7 +547,7 @@
             <v-col>
               <v-card class="mt-20" elevation="10" max-width="800">
                 <v-card-title primary-title class="font-weight-bold">
-                  10 Day Weather
+                  3 Day Weather
                   <span class="font-weight-light">
                     -{{ city }}, {{ country }}</span
                   >
@@ -616,7 +616,7 @@
                               </v-card-title>
                               <v-card-text>
                                 <v-row align="center">
-                                  <v-col cols="10">
+                                  <v-col cols="10 ">
                                     <v-row>
                                       <v-col cols="6">
                                         <p
